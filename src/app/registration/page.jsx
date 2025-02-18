@@ -1,7 +1,6 @@
 "use client";
 import { useState } from 'react';
 import Image from 'next/image';
-import qr from '../../../public/qr.PNG';
 
 export default function Registration() {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -64,7 +63,7 @@ export default function Registration() {
             <h3 className="text-xl font-semibold text-purple-800 mb-2">Scan to Register</h3>
             <div className="flex justify-center my-4">
                 <Image
-                    src={qr}
+                    src='/qr.png'
                     alt="QR Code for Registration"
                     width={300}
                     height={300}
@@ -89,7 +88,7 @@ export default function Registration() {
                 >
                     <div className="relative" onClick={(e) => e.stopPropagation()}>
                         <Image
-                            src={qr}
+                            src="/qr.png"
                             alt="QR Code Full Screen"
                             width={700}
                             height={700}
