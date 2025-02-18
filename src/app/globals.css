@@ -2,20 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Import custom fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #faf5ff;
+  --foreground: #2d2d2d;
+  --primary: #6b21a8;
+  --secondary: #805ad5;
+  --accent: #d53f8c;
+  --muted: #f3e8ff;
+  --heading: var(--primary);
+  --link: var(--primary);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #1a001a;
+    --foreground: #e2e8f0;
+    --primary: #9f7aea;
+    --secondary: #7f5af0;
+    --accent: #f687b3;
+    --muted: #2d2033;
+    --heading: var(--foreground);
+    --link: var(--primary);
   }
+} */
+
+html,
+body {
+  height: 100%;
+  margin: 0;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Comfortaa', sans;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Teko', serif;
+  font-weight: 100;
+  color: var(--heading);
+}
+
+a {
+  color: var(--link);
+}
+
+.footer {
+  margin-top: auto;
 }
