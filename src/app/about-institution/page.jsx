@@ -1,5 +1,11 @@
 // src/app/about-institution/page.jsx
 
+export const metadata = {
+    title: 'About the Institution | Karpagam Academy of Higher Education',
+    description:
+        'Discover Karpagam Academy of Higher Education (KAHE) - a premier institution known for academic excellence, innovative research, and state-of-the-art infrastructure.',
+};
+
 export default function AboutInstitution() {
     return (
         <div className="max-w-7xl mx-auto px-4 py-8">

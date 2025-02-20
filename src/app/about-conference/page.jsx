@@ -1,5 +1,10 @@
 // src/app/about-conference/page.jsx
 
+export const metadata = {
+    title: 'About the Conference | Intelligent Biosystems for Healthcare Analytics',
+    description: 'Learn about the National Level Conference on Intelligent Biosystems for Healthcare Analytics, its objectives, and expected outcomes for interdisciplinary innovation.',
+};
+
 export default function AboutConference() {
     return (
         <div className="max-w-7xl mx-auto px-4 py-8">

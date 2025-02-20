@@ -7,7 +7,6 @@ export default function AnimatedHero() {
 
             {/* <div className="absolute top-0 left-0 w-full h-full bg-[url('/bro.jpg')] bg-cover bg-center opacity-10"></div> */}
 
-            
 
             <div className="text-center z-10 px-4">
                 <h1 className="text-5xl md:text-6xl font-bold text-purple-800 mb-4 ">

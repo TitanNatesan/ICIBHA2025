@@ -1,3 +1,14 @@
+export const metadata = {
+    title: "Conference Committee - ICIBHA 2025",
+    description: "Meet the distinguished conference committee members for the 2nd National Level Conference on Intelligent Biosystems for Healthcare Analytics (ICIBHA-2025) at Karpagam Academy of Higher Education.",
+    openGraph: {
+        title: "Conference Committee - ICIBHA 2025",
+        description: "Meet the distinguished conference committee members for the 2nd National Level Conference on Intelligent Biosystems for Healthcare Analytics (ICIBHA-2025).",
+        url: "https://icibha-2025.vercel.app/committee",
+        type: "website",
+    },
+};
+
 import React from 'react';
 
 function PersonCard({ commonTitle, img, name, designation, college, department, faculty }) {
