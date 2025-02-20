@@ -7,7 +7,7 @@ const nextConfig = {
                 hostname: "robohash.org",
             }
         ]
-    }
+    },
 };
 
 export default nextConfig;

@@ -1,0 +1,13 @@
+# *
+User-agent: *
+Allow: /
+
+# BadBot
+User-agent: BadBot
+Disallow: /
+
+# Host
+Host: https://icibha-2025.vercel.app
+
+# Sitemaps
+Sitemap: https://icibha-2025.vercel.app/sitemap.xml
