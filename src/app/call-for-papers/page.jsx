@@ -41,7 +41,7 @@ export default function CallForPapers() {
             <section>
                 <h2 className="text-xl font-semibold text-purple-800 mb-2">Important Dates</h2>
                 <ul className="list-disc list-inside mb-4">
-                    <li><strong>Last Date for Paper Submission:</strong> 21st February 2025</li>
+                    <li><strong>Last Date for Paper Submission:</strong> 25st February 2025</li>
                     <li><strong>Notification of Acceptance:</strong> 28th February 2025</li>
                     <li><strong>Conference Date:</strong> 5th March 2025</li>
                 </ul>

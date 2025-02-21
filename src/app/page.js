@@ -29,6 +29,7 @@ export default function Home() {
           Explore our website to learn more about the institution, conference details, important dates, paper submissions, and more.
         </p>
       </main>
+      
       <hr />
       <AboutConference />
       <hr />

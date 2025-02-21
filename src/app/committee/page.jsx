@@ -13,20 +13,12 @@ import React from 'react';
 
 function PersonCard({ commonTitle, img, name, designation, college, department, faculty }) {
     return (
-        <div className="bg-gray-50 rounded p-4 shadow-sm flex flex-col items-center text-center">
-            {img ? (
-                <img
-                    src={img}
-                    alt={name}
-                    className="w-16 h-16 rounded-full object-cover mb-4"
-                />
-            ) : (
-                <img
-                    src={`https://robohash.org/${name}`}
-                    alt={name}
-                    className="w-16 h-16 rounded-full object-cover mb-4"
-                />
-            )}
+        <div className="bg-gray-50 rounded p-4 shadow-sm flex flex-col items-center text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-md">
+            <img
+                src={img ? img : `https://robohash.org/${name}`}
+                alt={name}
+                className="w-28 h-28 rounded-full object-cover mb-4"
+            />
             <h3 className="text-xl font-semibold mb-1">{name}</h3>
             <p className="text-gray-600">{designation}</p>
             {department && <p className="text-gray-600">{department}</p>}
@@ -46,14 +38,14 @@ export default function Committee() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <PersonCard
                     commonTitle="Chief Patron"
-                    img={null}
+                    img="/people/venkat.jpg"
                     name="Prof. Dr. B. Venkatachalapathy"
                     designation="Vice Chancellor"
                     college="Karpagam Academy of Higher Education"
                 />
                 <PersonCard
                     commonTitle="Chief Patron"
-                    img={null}
+                    img="/people/ravi.jpg"
                     name="Dr. S. Ravi"
                     designation="Registrar"
                     college="Karpagam Academy of Higher Education"
@@ -61,7 +53,7 @@ export default function Committee() {
 
                 <PersonCard
                     commonTitle="Patron"
-                    img={null}
+                    img='/people/a-amudha.jpeg'
                     name="Dr. A. Amudha"
                     designation="Dean"
                     faculty="Faculty of Engineering"
@@ -87,7 +79,7 @@ export default function Committee() {
                 />
                 <PersonCard
                     commonTitle="Organizing Secretary"
-                    img={null}
+                    img="/people/ramesh.jpg"
                     name="Dr. M. Ramesh"
                     designation="Assistant Professor"
                     department="Department of Biomedical Engineering"
