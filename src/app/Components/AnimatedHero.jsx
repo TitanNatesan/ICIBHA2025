@@ -1,24 +1,30 @@
 "use client";
 import React, { useEffect } from "react";
-import Script from "next/script";
-import "./style.css"
+import "./style.css";
 
 export default function AnimatedHero() {
-    // Initialize particles.js once the component mounts
     useEffect(() => {
-        // Check if particlesJS is loaded on window
-        if (window.particlesJS) {
-            // Load particles configuration from /particles.json
-            window.particlesJS.load("particles-js", "/particles.json", function () {
-                console.log("Particles.js loaded successfully.");
-            });
-        }
+        // Dynamically load particles.js script
+        const script = document.createElement("script");
+        script.src = "https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js";
+        script.async = true;
+        script.onload = () => {
+            if (window.particlesJS) {
+                window.particlesJS.load("particles-js", "/particles.json", function () {
+                    console.log("Particles.js loaded successfully.");
+                });
+            }
+        };
+        document.body.appendChild(script);
+
+        // Cleanup script on unmount
+        return () => {
+            document.body.removeChild(script);
+        };
     }, []);
 
     return (
         <section className="relative w-full min-h-[60vh] flex items-center justify-center bg-gradient-to-r from-purple-200 via-purple-100 to-purple-50 overflow-hidden">
-            <Script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" strategy="afterInteractive" />
-
             <div id="particles-js" className="absolute top-0 left-0 w-full h-full z-0"></div>
 
             <div className="text-center z-10 px-4 hero">
