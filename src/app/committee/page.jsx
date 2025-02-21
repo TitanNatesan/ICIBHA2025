@@ -61,7 +61,7 @@ export default function Committee() {
                 />
                 <PersonCard
                     commonTitle="Convener"
-                    img={null}
+                    img='/people/kamalraj.jpg'
                     name="Dr. Kamalraj Subramaniam"
                     designation="Professor and Head"
                     department="Department of Biomedical Engineering"
@@ -70,7 +70,7 @@ export default function Committee() {
                 />
                 <PersonCard
                     commonTitle="Conference Chair"
-                    img={null}
+                    img='/people/mohana.jpg'
                     name="Dr. A. Mohanarathinam"
                     designation="Assistant Professor"
                     department="Department of Biomedical Engineering"

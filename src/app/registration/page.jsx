@@ -20,8 +20,8 @@ export default function Registration() {
         <>
             <Head>
                 <title>Registration & Important Dates - ICIBHA2025</title>
-                <meta 
-                    name="description" 
+                <meta
+                    name="description"
                     content="Learn about the registration fee, important dates, manuscript submission, and contact details for the 2nd National Level Conference on Intelligent Biosystems for Healthcare Analytics."
                 />
             </Head>
@@ -38,7 +38,7 @@ export default function Registration() {
                 <h3 className="text-xl font-semibold text-purple-800 mb-2">Important Dates</h3>
                 <ul className="list-disc list-inside mb-4">
                     <li>
-                        <strong>Last Date for Submission of Research Papers:</strong> 21st February 2025
+                        <strong>Last Date for Submission of Research Papers:</strong> 25st February 2025
                     </li>
                     <li>
                         <strong>Notification of Acceptance:</strong> 28th February 2025

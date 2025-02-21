@@ -1,4 +1,5 @@
 import React from 'react';
+import "./style.css"
 
 export default function ConferenceProceedings() {
     const images = [
@@ -16,8 +17,8 @@ export default function ConferenceProceedings() {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
                 {images.map((src, index) => (
-                    <div key={index} className="overflow-hidden rounded shadow">
-                        <img src={src} alt={`Past Conference ${index + 1}`} className="w-full h-auto object-cover" />
+                    <div key={index} className="overflow-hidden rounded ">
+                        <img src={src} alt={`Past Conference ${index + 1}`} className="w-full h-auto object-cover conimg" />
                     </div>
                 ))}
             </div>
