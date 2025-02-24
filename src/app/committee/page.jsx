@@ -20,7 +20,7 @@ function PersonCard({ commonTitle, img, name, designation, college, department, 
                 className="w-28 h-28 rounded-full object-cover mb-4"
             />
             <h3 className="text-xl font-semibold mb-1">{name}</h3>
-            <p className="text-gray-600">{designation}</p>
+            <p className="text-gray-600z">{designation}</p>
             {department && <p className="text-gray-600">{department}</p>}
             {faculty && <p className="text-gray-500">{faculty}</p>}
             <p className="text-gray-500">{college}</p>
@@ -80,7 +80,7 @@ export default function Committee() {
                 <PersonCard
                     commonTitle="Organizing Secretary"
                     img="/people/ramesh.jpg"
-                    name="Dr. M. Ramesh"
+                    name="Dr. Ramesh Munirathinam"
                     designation="Assistant Professor"
                     department="Department of Biomedical Engineering"
                     faculty="Faculty of Engineering"

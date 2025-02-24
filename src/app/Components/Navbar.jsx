@@ -9,6 +9,7 @@ const navLinks = [
         subLinks: [
             { href: "/about-institution", label: "About Institution" },
             { href: "/about-conference", label: "About Conference" },
+            { href: "/about-the-department", label: "About The Department" },
         ],
     },
     { href: "/committee", label: "Committee" },
@@ -69,7 +70,7 @@ export default function Navbar() {
                                             <span className="block text-purple-800 hover:text-purple-600 cursor-pointer">
                                                 {link.label}
                                             </span>
-                                            <div className="absolute left-0 mt-0 w-48 bg-white shadow-lg border border-gray-200 hidden group-hover:block">
+                                            <div className="absolute left-0 mt-0 w-60 bg-white shadow-lg border border-gray-200 hidden group-hover:block">
                                                 <ul>
                                                     {link.subLinks.map(({ href, label }) => (
                                                         <li key={href}>

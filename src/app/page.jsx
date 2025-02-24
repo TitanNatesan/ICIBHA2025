@@ -6,6 +6,7 @@ export const metadata = {
 
 import AboutConference from "./about-conference/page";
 import AboutInstitution from "./about-institution/page";
+import AboutTheDepartment from "./about-the-department/page";
 import CallForPapers from "./call-for-papers/page";
 import Committee from "./committee/page";
 import AnimatedHero from "./Components/AnimatedHero";
@@ -25,15 +26,17 @@ export default function Home() {
         <p className="mb-4" style={{ color: 'var(--foreground)' }}>
           Karpagam Academy of Higher Education (KAHE) proudly presents the 2nd National Level Conference on Intelligent Biosystems for Healthcare Analytics.
         </p>
-        <p style={{ color: 'var(--foreground)' }}>
+        {/* <p style={{ color: 'var(--foreground)' }}>
           Explore our website to learn more about the institution, conference details, important dates, paper submissions, and more.
-        </p>
+        </p> */}
       </main>
       
       <hr />
       <AboutConference />
       <hr />
       <AboutInstitution />
+      <hr />
+      <AboutTheDepartment/>
       <hr />
       <CallForPapers />
       <hr />

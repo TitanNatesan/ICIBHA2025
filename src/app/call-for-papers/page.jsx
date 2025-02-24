@@ -13,20 +13,28 @@ export default function CallForPapers() {
             </header>
             <section>
                 <p className="mb-4">
-                    The 2nd National Level Conference on <strong>Intelligent Biosystems for Healthcare Analytics (ICIBHA-2025)</strong> invites original research papers from students, academicians, researchers, and industry experts.
+                    {/* The 2nd National Level Conference on <strong>Intelligent Biosystems for Healthcare Analytics (ICIBHA-2025)</strong> invites original research papers from students, academicians, researchers, and industry experts. */}
+                    National conference is a premier forum for the
+                    presentation of technological advances and research
+                    results. Topics of submission include interest for the
+                    following, but<strong> not limited to</strong>
                 </p>
             </section>
 
             <section>
                 <h2 className="text-xl font-semibold text-purple-800 mb-2">Conference Tracks</h2>
                 <ul className="list-disc list-inside mb-4">
-                    <li>Biomedical Signal and Image Processing</li>
                     <li>AI and Machine Learning in Healthcare</li>
+                    <li>Sports Biomechanics</li>
+                    <li>Sports Rehabilitation</li>
+                    <li>Speech Therapy</li>
                     <li>Wearable and Implantable Medical Devices</li>
+                    <li>Signal processing techniques</li>
+                    <li>Pattern recognition</li>
+                    <li>Deep learning</li>
                     <li>Health Data Analytics and Big Data in Medicine</li>
-                    <li>Telemedicine and e-Health</li>
-                    <li>Bioinformatics and Computational Biology</li>
-                    <li>Smart Sensors and IoT in Healthcare</li>
+                    <li>Biophotonics</li>
+                    <li>Computer Vision</li>
                 </ul>
             </section>
 
@@ -38,14 +46,14 @@ export default function CallForPapers() {
                 </p>
             </section>
 
-            <section>
+            {/* <section>
                 <h2 className="text-xl font-semibold text-purple-800 mb-2">Important Dates</h2>
                 <ul className="list-disc list-inside mb-4">
-                    <li><strong>Last Date for Paper Submission:</strong> 25st February 2025</li>
+                    <li><strong>Last Date for Paper Submission:</strong> 25th February 2025</li>
                     <li><strong>Notification of Acceptance:</strong> 28th February 2025</li>
                     <li><strong>Conference Date:</strong> 5th March 2025</li>
                 </ul>
-            </section>
+            </section> */}
 
             <section>
                 <h2 className="text-xl font-semibold text-purple-800 mb-2">Publication</h2>

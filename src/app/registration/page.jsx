@@ -38,7 +38,7 @@ export default function Registration() {
                 <h3 className="text-xl font-semibold text-purple-800 mb-2">Important Dates</h3>
                 <ul className="list-disc list-inside mb-4">
                     <li>
-                        <strong>Last Date for Submission of Research Papers:</strong> 25st February 2025
+                        <strong>Last Date for Submission of Research Papers:</strong> 25th February 2025
                     </li>
                     <li>
                         <strong>Notification of Acceptance:</strong> 28th February 2025
@@ -82,14 +82,14 @@ export default function Registration() {
                     />
                 </div>
 
-                <h3 className="text-xl font-semibold text-purple-800 mb-2">Contact</h3>
+                {/* <h3 className="text-xl font-semibold text-purple-800 mb-2">Contact</h3>
                 <p>
                     For further queries, contact:
                     <br />
                     <strong>Mobile:</strong> 98650 02264, 99401 97856
                     <br />
                     <strong>Email:</strong> icibhabme@gmail.com
-                </p>
+                </p> */}
 
                 {isModalOpen && (
                     <div
