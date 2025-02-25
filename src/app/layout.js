@@ -84,7 +84,6 @@ export default function RootLayout({ children }) {
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Navbar />
-        {/* Main content (each route's page) */}
         <main>{children}</main>
         <Footer />
       </body>

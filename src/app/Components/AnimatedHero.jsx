@@ -32,7 +32,7 @@ export default function AnimatedHero() {
                     2<sup>nd</sup> National Level Conference on <br />
                     Intelligent Bio systems for Healthcare Analytics
                 </h1>
-                <p className="text-purple-800 text-lg md:text-2xl font-extrabold">
+                <p className="text-purple-800 text-lg md:text-2xl font-extrabold text-center">
                     Organized by Department of Biomedical Engineering
                 </p>
             </div>
