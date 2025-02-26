@@ -1,5 +1,6 @@
 import React from 'react';
 import "./style.css"
+import Image from 'next/image';
 
 export default function ConferenceProceedings() {
     const images = [
@@ -18,7 +19,7 @@ export default function ConferenceProceedings() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
                 {images.map((src, index) => (
                     <div key={index} className="overflow-hidden rounded ">
-                        <img src={src} alt={`Past Conference ${index + 1}`} className="w-full h-auto object-cover conimg" />
+                        <Image width={1200} height={600} loading='lazy' src={src} alt={`Past Conference ${index + 1}`} className="w-full h-auto object-cover conimg" />
                     </div>
                 ))}
             </div>

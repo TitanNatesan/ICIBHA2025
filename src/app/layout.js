@@ -81,6 +81,16 @@ export default function RootLayout({ children }) {
         <script src="https://cdn.rawgit.com/progers/pathseg/master/pathseg.js"></script>
         <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
         <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <meta name="description" content={metadata.description} />
+        <meta property="og:title" content={metadata.openGraph.title} />
+        <meta property="og:description" content={metadata.openGraph.description} />
+        <meta property="og:url" content={metadata.openGraph.url} />
+        <meta property="og:site_name" content={metadata.openGraph.siteName} />
+        <meta property="og:locale" content={metadata.openGraph.locale} />
+        <meta property="og:type" content={metadata.openGraph.type} />
+        <meta name="twitter:card" content={metadata.twitter.card} />
+        <meta name="twitter:title" content={metadata.twitter.title} />
+        <meta name="twitter:description" content={metadata.twitter.description} />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Navbar />

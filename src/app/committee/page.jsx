@@ -9,15 +9,19 @@ export const metadata = {
     },
 };
 
+import Image from 'next/image';
 import React from 'react';
 
 function PersonCard({ commonTitle, img, name, designation, college, department, faculty }) {
     return (
         <div className="bg-gray-50 rounded p-4 shadow-sm flex flex-col items-center text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-md">
-            <img
+            <Image
                 src={img ? img : `https://robohash.org/${name}`}
                 alt={name}
                 className="w-28 h-28 rounded-full object-cover mb-4"
+                width={280}
+                height={280}
+                loading='lazy'
             />
             <h3 className="text-xl font-semibold mb-1">{name}</h3>
             <p className="text-gray-600z">{designation}</p>
